@@ -1,0 +1,472 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.nav-bar {
+  background-color: #273053;
+  display: flex;
+  padding: 10px 10% 10px 10%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  z-index: 1001;
+}
+.nav-bar span {
+  font-size: 25px;
+  color: #0dcaf0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav-bar ul {
+  width: 70%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar ul li {
+  font-size: 20px;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+}
+.nav-bar ul li a:hover {
+  color: #0dcaf0;
+}
+.home {
+  background-image: url("../imgs/terren-hurst-blgOFmPIlr0-unsplash.jpg");
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: fit-conent;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.home h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 10px;
+  color: white;
+  letter-spacing: 3px;
+}
+.home .home-h1 {
+  color: #0dcaf0;
+  text-decoration: underline;
+}
+.home .home-time {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.home-time p {
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  border: 1px solid white;
+}
+.home-arrow a img {
+  margin: 10px;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+.home-highlight {
+  display: flex;
+  padding: 10px 10% 10px 10%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.home-highlight div {
+  width: 30%;
+  text-align: center;
+  position: relative;
+}
+.home-highlight div img {
+  width: 100%;
+}
+.home-highlight div span {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  color: white;
+  font-size: 1vm;
+  font-weight: bold;
+  word-spacing: 5px;
+}
+.story {
+  font-size: 40px;
+  padding-left: 10%;
+}
+.story span {
+  color: #0dcaf0;
+  text-decoration: underline;
+}
+.about {
+  padding: 10px 10% 70px 10%;
+  display: flex;
+  flex-direction: row;
+}
+.about .about1,
+.about2 {
+  width: 50%;
+  padding-left: 15px;
+}
+
+.about1 h2 {
+  font-size: 30px;
+}
+.about1 p {
+  font-size: 18px;
+  color: #5c5e5f;
+}
+.about-links {
+  padding-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+.about-link1 {
+  padding: 5px 10px;
+  border: 2px solid #0dcaf0;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #0dcaf0;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.about-link2 {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  background-color: #273053;
+}
+.about-link1:hover,
+.about-link2:hover {
+  color: white;
+  background-color: #0dcaf0;
+}
+.about2 h2 {
+  font-size: 27px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #929496;
+}
+.about-imgs {
+  padding-top: 30px;
+  display: flex;
+}
+.about-imgs img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid white;
+}
+.about-imgs .img2 {
+  position: relative;
+  right: 10px;
+}
+.about-imgs .img3 {
+  position: relative;
+  right: 20px;
+}
+.about-imgs .img4 {
+  position: relative;
+  right: 30px;
+}
+.about-imgs p {
+  font-size: 18px;
+  color: #5c5e5f;
+}
+.speakers {
+  background-color: #f0f8ff;
+  padding: 50px 10% 50px 10%;
+}
+.speaker-main {
+  display: flex;
+  flex-direction: row;
+}
+.speaker {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+  justify-content: center;
+}
+.speaker h1 {
+  font-size: 40px;
+}
+.speaker h1 span {
+  color: #0dcaf0;
+}
+.speaker p {
+  font-size: 18px;
+  color: #5c5e5f;
+}
+.speaker1 {
+  width: 50%;
+  position: relative;
+}
+.speaker1 img {
+  width: 100%;
+}
+.speaker1 span {
+  background-color: rgb(32, 89, 212);
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.speaker1 div {
+  width: 90%;
+  background-color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 5%;
+  transition-duration: 1s;
+  transition-property: background-color, color;
+  transition-timing-function: ease;
+}
+.speaker1 div h2 {
+  margin: 0;
+  padding: 5px;
+  text-transform: capitalize;
+}
+.speaker1 div p {
+  margin: 0;
+  padding: 5px;
+  font-size: 15px;
+  color: #929496;
+}
+.speaker1:hover div {
+  background-color: #0dcaf0;
+  color: #ffffff;
+}
+
+.speaker-main2 {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.speaker2 {
+  width: 23%;
+  position: relative;
+}
+.speaker2 img {
+  width: 100%;
+}
+.speaker2 div {
+  width: 90%;
+  background-color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 5%;
+  transition-duration: 1s;
+  transition-property: background-color, color;
+  transition-timing-function: ease;
+}
+.speaker2 div h2 {
+  margin: 0;
+  padding: 2px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.speaker2 div p {
+  margin: 0;
+  padding: 2px;
+  font-size: 13px;
+  color: #929496;
+}
+.speaker2:hover div {
+  background-color: #0dcaf0;
+  color: #ffffff;
+}
+.Schedule-title,
+.prices-title {
+  text-align: center;
+  font-size: 40px;
+  margin: 50px;
+}
+.Schedule-title span,
+.prices-title span {
+  color: #0dcaf0;
+}
+.Schedule {
+  padding: 30px 10% 30px 10%;
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #929496;
+}
+.Schedule-img {
+  width: 35%;
+}
+.Schedule-img img {
+  width: 100%;
+  border-radius: 50px;
+}
+.Schedule-desc {
+  width: 60%;
+}
+.Schedule-desc p {
+  font-size: 15px;
+  color: #929496;
+}
+.Schedule-info {
+  display: flex;
+  flex-direction: row;
+}
+.Schedule-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.speaker-info h5 {
+  margin: 0;
+  padding: 2px;
+}
+
+.Schedule-info p {
+  padding-left: 20px;
+  font-size: 12px;
+}
+.speaker-info p {
+  margin: 0;
+  padding: 2px;
+  font-size: 12px;
+}
+.prices {
+  padding: 30px 10% 30px 10%;
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.prices-item {
+  width: 31%;
+  box-shadow: 1px 1px 20px 5px #cccccc inset;
+  -moz-box-shadow: 1px 1px 20px 5px #cccccc inset;
+  -webkit-box-shadow: 1px 1px 20px 5px #cccccc inset;
+  border-radius: 20px;
+}
+.prices-item1 {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 20px;
+  justify-content: space-between;
+  background-color: #273053;
+  height: 80px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.prices-item1 p {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.prices-item2 {
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  border-bottom: 1px solid #929496;
+}
+.prices-item2 p {
+  color: #5c5e5f;
+}
+.prices-item3 {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.prices-item3 p {
+  color: #5c5e5f;
+  margin: 10px 0px;
+}
+.prices-item3 a {
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  background-color: #273053;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.prices-item3 a:hover {
+  background-color: #0dcaf0;
+}
+.contact {
+  background-image: url("../imgs/terren-hurst-blgOFmPIlr0-unsplash.jpg");
+  width: 100%;
+  padding: 50px 25%;
+  height: fit-conent;
+  text-align: center;
+}
+.contact-item {
+  width: 100%;
+  border-radius: 20px;
+}
+.contact-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #273053;
+  height: 80px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.contact-title p {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+.contact-form {
+  background-color: #ffffff;
+  padding: 50px 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  height: 50px;
+  background-color: #f0f8ff;
+  padding: 10px;
+  margin: 10px 0px;
+  width: 30%;
+  border: none;
+}
+.contact-form textarea {
+  max-width: 90%;
+  min-width: 90%;
+  background-color: #f0f8ff;
+  border: none;
+}
+.contact-form input[type="submit"] {
+  width: 90%;
+  background-color: #0dcaf0;
+  color: #ffffff;
+  margin: 20px 0px;
+  font-size: 30px;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 0px;
+}
+.contact-form input[type="submit"]:hover {
+  background-color: #273053;
+}
